@@ -1,0 +1,41 @@
+{
+	"name": "carsTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqlsandboxoutput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Make",
+				"type": "varchar"
+			},
+			{
+				"name": "Model",
+				"type": "varchar"
+			},
+			{
+				"name": "Type",
+				"type": "varchar"
+			},
+			{
+				"name": "Origin",
+				"type": "varchar"
+			},
+			{
+				"name": "DriveTrain",
+				"type": "varchar"
+			},
+			{
+				"name": "Length",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Cars"
+		}
+	}
+}
